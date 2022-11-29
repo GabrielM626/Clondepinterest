@@ -1,0 +1,131 @@
+html{
+    border:2px solid red;
+    box-sizing:content-box;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    /*border: 2px solid blue;*/
+    box-sizing: border-box;
+}
+*::before,*::after {
+    border: 2px solid green;
+  height: 4vw;
+  width: 60vw;
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type:none ;
+    padding: 0;
+}
+#navbar-pinterest{
+    display: flex;
+    justify-content:space-around ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.navbar-elements {
+    display: flex;
+    align-items: center;
+}
+.navbar-elements *{
+    margin: 0 7px;
+}
+
+.finder{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+    width: 55%;
+    height: 60%;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    border: 2px solid red;
+}
+.finder input{
+    padding: 20px;
+    
+    flex-grow: 1;
+    margin: 0 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    content: url(./imagenes/busqueda.png);
+}
+/*.finder::before{
+    content: url(./imagenes/busqueda.png);
+    flex-grow: 1;
+    outline-width: 2em;
+    
+    
+    
+}*/
+.finder:hover{
+    background-color: aliceblue;
+}
+.finder input:hover{
+    background-color: aliceblue;
+}
+.finder:active{
+    border: 3px solid rgb(186, 245, 23) ;
+    margin:0px;
+}
+#pinterst-icon img{
+    width: 20em;
+    height: 20em;
+}
+.top-left{
+    font-weight: bold;
+    align-items: center;
+}
+#perfil img{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+#mensaje img{
+    width: 100px;
+    height: 100px;
+
+}
+#notificaciones img{
+    
+    width: 80px;
+    height: 80px;
+
+}
+#notifications:hover{
+    display: flex;
+    background-color: aliceblue;
+    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+#cuerpo{
+    display:flex;
+    flex-direction: row;   
+
+}
+ 
+.card-image{
+    display: flex;
+    flex-direction:column;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+    
